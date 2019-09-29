@@ -1,4 +1,99 @@
-html, body {
-    background-color: black;
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #202020, #111119);
     color: white;
+    overflow: hidden;
 }
+
+html {  height: 100%;}
+
+.warn {
+    text-decoration: underline;
+}
+
+.topregion {
+    background-color: rgb(112, 127, 255);
+    position: absolute;
+    transform: translate(-50%, -0%);
+    top: 0%;
+    left: 50%;
+
+    height: 23px;
+    width: 100%;
+
+    text-align: center;
+}
+
+.note {
+    filter: blur(3px);
+    transition: .3s all;
+}
+
+.note:hover {
+    filter: blur(0px);
+    transition: .3s all;
+}
+
+#close {
+    background-color: transparent;
+    border: none;
+    color: rgb(221, 221, 221);
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 99%;
+    position: absolute;
+    transition: .3s all;
+}
+
+#close:hover {
+    cursor: pointer;
+    color: white;
+    transition: .3s all;
+}
+
+#logo {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.E {
+    font-size: 400%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    filter: blur(20px);
+
+    z-index: -1;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
