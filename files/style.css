@@ -57,30 +57,6 @@ html {  height: 100%;}
     transition: .3s all;
 }
 
-#middle {
-    text-align: center;
-    vertical-align: middle;
-    width: 300px;
-    height: 150px;
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.651);
-
-
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
-}
-
-.letter {
-    font-size: 80px;
-}
-
-marquee {
-    width: 300px;
-}
-
-
 #myVideo {
     position: fixed;
     right: 0;
@@ -101,4 +77,28 @@ marquee {
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+  }
+
+
+  #middleregion {
+      border: 0px solid white;
+      background-color: rgba(0, 0, 0, 0.466);
+
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      text-align: center;
+  }
+
+  .letter {
+      font-size: 90px;
+  }
+
+  marquee {
+      width: 140px;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
   }
