@@ -6,9 +6,32 @@ body {
     background: linear-gradient(to bottom, #202020, #111119);
     color: white;
     overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'F3';
 }
 
+@font-face {
+    font-family: F3;
+    src: url("DankMono-Regular.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+a:link { color: white; text-decoration: none;}
+
+a:visited { color: white; text-decoration: none;}
+
+.letter:link {
+    color: white;
+  }
+  
+  .letter:hover {
+    color: rgb(201, 201, 201);
+    transition: .5s;
+  }
+  
+  .letter:active {
+    color: white;
+  }
 
 html {  height: 100%;}
 
@@ -27,6 +50,69 @@ html {  height: 100%;}
     width: 100%;
 
     text-align: center;
+}
+
+.topregion2 {
+    background-color: rgba(0, 0, 0, 0.253);
+    border-right: 2px solid white;
+    position: absolute;
+    transform: translate(-0%, -0%);
+    top: 0%;
+    left: 0%;
+    line-height: 40px;
+
+    height: 100%;
+    width: 7%;
+
+    text-align: center;
+}
+
+.box1 {
+    margin: 0 auto;
+
+    
+    height: 40px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+}
+
+.box1:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.box2 {
+    margin: 0 auto;
+
+    
+    height: 40px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+}
+
+.box2:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.box3 {
+    margin: 0 auto;
+
+    
+    height: 40px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+}
+
+.box3:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+    transition: .5s;
+    cursor: pointer;
 }
 
 .note {
@@ -91,7 +177,7 @@ html {  height: 100%;}
       left: 50%;
       position: absolute;
       width: 170px;
-      height: 170px;
+      height: 155px;
       text-align: center;
   }
 
@@ -113,6 +199,7 @@ html {  height: 100%;}
       font-size: 90px;
       font-family: F2;
       line-height: 120px;
+      transition: .5s;
   }
 
   marquee {
@@ -122,3 +209,17 @@ html {  height: 100%;}
       font-size: 15px;
   }
 
+  marquee:hover {
+      cursor: default;
+  }
+
+.emily {
+    color: white;
+    transition: .5s;
+}
+
+.emily:hover {
+    color: rgb(166, 255, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    transition: .5s;
+}
