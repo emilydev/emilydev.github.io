@@ -1,6 +1,14 @@
 <html>
     <head>
+        <meta name="description" content="Envy - site developed by Emily">
+        <meta property="og:title" content="Envy">
+        <meta property="og:description" content="Envy - site developed by Emily">
+        <meta itemprop="name" content="Envy">
+        <meta itemprop="description" content="Envy - site developed by Emily">
+        <link rel="shortcut icon" href="files/icon.png" type="image/x-icon">
+        <title>Envy</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link href="files/style.css" type="text/css" rel="stylesheet">
         <link href="files/style.scss" type="text/css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -34,14 +42,21 @@
             <source src="vid2.mp4" type="video/mp4">
         </video>
 
+        <script type='text/javascript'> 
+            title = "⠀Envy⠀⠀⠀⠀⠀⠀⠀";
+            position = 0;
+            function scrolltitle() {
+                document.title = title.substring(position, title.length) + title.substring(0, position); 
+                position++;
+                if (position > title.length) position = 0;
+                titleScroll = window.setTimeout(scrolltitle,500);
+            }
+            scrolltitle();
+            </script>
+
 
 <script>
-$('#close').click(function (e) {
-    if ($(e.target).attr('id') != 'xbut') {
-        $('#toggle').hide();
-        event.stopPropagation();
-    }
-})
+$('#close').click(function (e) { if ($(e.target).attr('id') != 'xbut') { $('#toggle').hide(); event.stopPropagation(); } })
 </script>
 
     </body>
