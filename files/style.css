@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('Positive_System.eot'); /* IE9 Compat Modes */
+    src: url('Positive_System.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Positive_System.woff') format('woff'), /* Modern Browsers */
+         url('Positive_System.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('Positive_System.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
 body {
     height: 100%;
     margin: 0;
@@ -95,6 +104,7 @@ html {  height: 100%;}
 
   .letter {
       font-size: 90px;
+      font-family: 'MyWebFont';
   }
 
   marquee {
