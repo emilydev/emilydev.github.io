@@ -1,2 +1,2 @@
 # emilydev.github.io
-Shit 99% self coded website
+my own little selfcode shitsite, (0,01% might be pasted off google, im not a total god ok)
