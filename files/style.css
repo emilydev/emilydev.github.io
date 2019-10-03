@@ -122,7 +122,7 @@ html {  height: 100%;}
 
     transform: translate(-50%, -50%);
     top: 35%;
-    left: 99%;
+    left: 98.5%;
     position: absolute;
     transition: .3s all;
 }
@@ -169,6 +169,20 @@ html {  height: 100%;}
       text-align: center;
   }
 
+  @font-face {
+    font-family: F4;
+    src: url("batmfa.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: F5;
+    src: url("batmfo.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 @font-face {
     font-family: F1;
     src: url("Positive\ System.otf") format('truetype');
@@ -184,22 +198,27 @@ html {  height: 100%;}
 }
 
   .letter {
-      font-size: 90px;
-      font-family: F1;
-      line-height: 120px;
+      font-size: 100px;
+      font-family: F5;
+      line-height: 110px;
       transition: .5s;
   }
 
-  marquee {
+  .names {
       width: 140px;
-      border-left: 1px solid white;
-      border-right: 1px solid white;
+      border-left: 1px solid rgba(255, 255, 255, 0);
+      border-right: 1px solid rgba(255, 255, 255, 0);
       font-size: 15px;
   }
 
-  marquee:hover {
+  .names:hover {
       cursor: default;
   }
+
+  .letterslide {
+    text-align: center;
+    height: 70%
+}
 
 .emily {
     color: white;
@@ -210,4 +229,10 @@ html {  height: 100%;}
     color: rgb(166, 255, 0);
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     transition: .5s;
+}
+
+.region {
+    font-size: 1.2vw;
+    transition: .5s;
+    border-bottom: 1px solid white;
 }
