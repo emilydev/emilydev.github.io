@@ -25,13 +25,21 @@ a:visited { color: white; text-decoration: none;}
   }
   
   .letter:hover {
-    color: rgb(201, 201, 201);
-    transition: .5s;
+    color: rgb(166, 255, 0);
+    text-shadow: 1px 2px 2px rgb(255, 255, 255);
+    transition: 1s;
   }
   
   .letter:active {
     color: white;
   }
+  .letter {
+    font-size: 90px;
+    font-family: F1;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    line-height: 120px;
+    transition: 1s;
+}
 
 html {  height: 100%;}
 
@@ -40,7 +48,7 @@ html {  height: 100%;}
 }
 
 .topregion {
-    background-color: rgb(112, 127, 255);
+    background-color: rgb(0, 0, 0);
     position: absolute;
     transform: translate(-50%, -0%);
     bottom: 0%;
@@ -53,13 +61,10 @@ html {  height: 100%;}
     text-align: center;
 }
 
-.topregion2 {
-    background-color: rgba(0, 0, 0, 0.253);
-    border-right: 2px solid white;
+.linkbar {
+    background-color: rgba(0, 0, 0, 0.315);
+    border-right: 1px solid white;
     position: absolute;
-    transform: translate(-0%, -0%);
-    top: 0%;
-    left: 0%;
     line-height: 40px;
 
     height: 100%;
@@ -68,52 +73,34 @@ html {  height: 100%;}
     text-align: center;
 }
 
-.box1 {
-    margin: 0 auto;
 
-    
+
+.link {
+    margin: 0 auto;
     height: 40px;
     width: auto;
     background-color: rgba(0, 0, 0, 0);
-    transition: .5s;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: .2s;
 }
 
-.box1:hover {
+.link:hover {
+    transition: .2s;
+    border: 5px solid rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0.253);
-    transition: .5s;
     cursor: pointer;
 }
 
-.box2 {
-    margin: 0 auto;
-
-    
-    height: 40px;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0);
+.links {
+    font-size: 1.2vw;
+    text-size-adjust: auto;
     transition: .5s;
 }
 
-.box2:hover {
-    background-color: rgba(255, 255, 255, 0.253);
+.links:hover {
+    color: rgb(166, 255, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
     transition: .5s;
-    cursor: pointer;
-}
-
-.box3 {
-    margin: 0 auto;
-
-    
-    height: 40px;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0);
-    transition: .5s;
-}
-
-.box3:hover {
-    background-color: rgba(255, 255, 255, 0.253);
-    transition: .5s;
-    cursor: pointer;
 }
 
 .note {
@@ -174,7 +161,7 @@ html {  height: 100%;}
       background-color: rgba(0, 0, 0, 0.466);
 
       transform: translate(-50%, -50%);
-      top: 50%;
+      top: 30%;
       left: 50%;
       position: absolute;
       width: 170px;
@@ -198,7 +185,7 @@ html {  height: 100%;}
 
   .letter {
       font-size: 90px;
-      font-family: F2;
+      font-family: F1;
       line-height: 120px;
       transition: .5s;
   }
